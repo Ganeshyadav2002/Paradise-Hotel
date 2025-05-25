@@ -30,12 +30,16 @@
     padding: 10px 20px;
     cursor: pointer;
 }
-.about-us{
-    float: left;
-   width: 50%;
-   margin: 10px 10px;
-   text-align: center;
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.about-us{
+    width: 50%;
+}
+
 .about-section >h2{
     text-align: center;
     margin: 10px 10px;
@@ -43,9 +47,4 @@
 }
 .amenities{
     text-align: center;
-}
-.amenities ul{
-    margin-top: 10px;
-    display: inline-block;
-    text-align: left;
 }
