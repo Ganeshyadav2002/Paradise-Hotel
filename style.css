@@ -32,12 +32,20 @@
 }
 .about-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+.about-heading,
+.know-more-container,
+.room-heading,
+.form-heading{
+    text-align: center;
+    font-size: 30px;
 }
 
 .about-us{
     width: 50%;
+   
 }
 
 .about-section >h2{
@@ -46,5 +54,69 @@
     text-decoration: underline;
 }
 .amenities{
-    text-align: center;
+    text-align: left;
+}
+
+ul li{
+    list-style: none;
+}
+
+.fa-solid{
+    margin-right: 10px;
+}
+
+.room-images img{
+   width: 600px;
+   height:400px;
+}
+.room-type-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0px 30px;
+
+    margin-top: 25px;
+}
+
+.room-list h5{
+    font-size: 20px;
+}
+
+.help-button{
+    background-color: brown;
+    width: fit-content;
+    position: fixed;
+    padding: 5px 15px;
+    border-radius: 15px;
+    bottom: 20px;
+    right: 5px;
+}
+
+.help-button h4{
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+form{
+    border: 2px solid gray;
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 0px;
+
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 20px;
+}
+input{
+    padding: 5px;
+    font-size: 15px;
 }

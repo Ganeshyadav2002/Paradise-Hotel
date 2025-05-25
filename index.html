@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/96d95fe4e8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,8 @@
             <button class="book-button">Book</button>
         </div>
     </section>
-    <!-- <h2>About Us</h2> -->
+    <h2 class="about-heading">About Us</h2>
     <section class="about-section">
-        <h2>About Us</h2>
         <div class="about-us">
             <p>
                 Looking for a vacation to leave behind the hustle of everyday life and indulge in world-class hospitally at exotic
@@ -37,13 +37,71 @@
         <div class="amenities">
             <H3>Amenities we have</H3>
             <ul>
-                <li>High speed internet</li>
-                <li>Complementary Breakfast</li>
-                <li>Swimming Pool</li>
-                <li>GYM</li>
-                <li>Cafeteria</li>
+                <li><i class="fa-solid fa-wifi"></i> High speed internet</li>
+                <li><i class="fa-solid fa-utensils"></i> Complementary Breakfast</li>
+                <li><i class="fa-solid fa-person-swimming"></i> Swimming Pool</li>
+                <li><i class="fa-solid fa-dumbbell"></i> GYM</li>
+                <li><i class="fa-solid fa-mug-saucer"></i> Cafeteria</li>
             </ul>
         </div>
+    </section>
+
+    <h3 class="room-heading">Room Types</h3>
+    <section class="room-type-container">
+        <div class="room-images">
+            <img src="images/room1.jpg" alt="Room image">
+        </div>
+        <div class="room-list">
+            <h5>Single Occpancy Room</h5>
+            <p>
+                 A room assigned to one person. It may have one or more beds.
+                 The size of a Single Room typically ranges form 37 m² to 45 m².
+            </p>
+
+            <h5>Family Room</h5>
+            <p>A family room is a living area connected to one or more bedrooms,
+               often with a separate living space. The size of Suite rooms generally ranges form 70 m² to 100 m².
+            </p>
+
+            <h5>Duplex Room</h5>
+            <p>
+                The most luxurious room in a hotel, typically only one Duplex suite is available per property.
+                Like regular suites, a Duplex suite includes one or more bedrooms and a living area,
+                but with a focus on lavish décor, premium amenities, and personalized services 
+                (e.g., a personal butler during the stay).
+            </p>
+        </div>
+    </section>
+    <div class="help-button">
+        <h4>Need Help?</h4>
+    </div>
+
+    <h2 class="form-heading">Fill the form for booking room</h2>
+    <section class="form-container">
+        <form >
+            <div class="form-group">
+                <label for="name">Your Full Name</label><br>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Id</label><br>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="booking-date">Date of Booking</label><br>
+                <input type="date" id="booking-date" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Select Type</label><br>
+                <select name="room-type" id="room-type" required>
+                    <option value="" selected disabled >Select...</option>
+                    <option value="single room">Single Room</option>
+                    <option value="family room">Family Room</option>
+                    <option value="duplex room">Duplex Room</option>
+                </select>
+            </div>
+            <input type="submit" value="Book">
+        </form>
     </section>
 </body>
 </html>
