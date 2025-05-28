@@ -129,7 +129,10 @@ select{
 }
 
 @media only screen and (max-width: 500px) {
- .hero-text > h1,
+ .hero-text > h1{
+    text-decoration: none;
+    font-size: 1.5rem; 
+ }
  .about-heading,
  .room-heading,
  .form-heading{
@@ -176,11 +179,42 @@ lable{
   
 }
 }
-@media only screen and (min-width: 501px)and(max-width: 980px) {
-    .hero-text > h1{
-    font-size: 30px; 
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+
+ .hero-text > h1{
+    text-decoration: none;
+    font-size: 2rem; 
+ }
+ .about-heading,
+ .room-heading,
+ .form-heading{
+    font-size: 1.8rem; 
+    text-decoration: underline;
  }
  p{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+ }
+ .room-images img{
+    max-width: 380px;
+ }
+ lable{
+    font-size: inherit;
+}
+.form-heading{
+    margin: 0.75rem 0rem;
+  
+}
+form{
+    margin:0rem 0rem 0.5rem 0rem;
+}
+}
+
+@media only screen and (max-width:800px){
+    .room-type-container{
+         display: block;
+        padding: 0rem 0.5rem ;
+    }
+    .room-images img{
+    max-width: 100%;
  }
 }
